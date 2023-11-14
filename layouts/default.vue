@@ -31,8 +31,8 @@ const mobileMenuOpen = ref(false)
 
         <!-- routes -->
         <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/about">About Me</NuxtLink>
-        <NuxtLink to="/contacts">Contact Me</NuxtLink>
+        <NuxtLink to="/about">About</NuxtLink>
+        <NuxtLink to="/contacts">Contact</NuxtLink>
 
 
       </PopoverGroup>
@@ -68,4 +68,5 @@ const mobileMenuOpen = ref(false)
       </DialogPanel>
     </Dialog>
   </header>
+  <slot></slot>
 </template>
