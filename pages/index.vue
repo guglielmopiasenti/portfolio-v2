@@ -5,22 +5,31 @@ useHead({
 </script>
 
 <template>
-  <div>
-    <div class="container grid grid-cols-2 min-h-screen mx-auto py-5">
-      <div class="border-2 border-green-600">
-        <h1>Hello, I'm Guglielmo.</h1>
-        <h1>A Full Stack Developer.</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto nihil cumque hic est? Libero quae nihil est
-          eaque magni officia quam voluptas asperiores dolorem quis? Sint perspiciatis est tempora enim.</p>
-        <div>
-          <div>you can find me on:</div>
-          <div></div>
+  <div class="relative bg-[url('public/gradient-1.png')] bg-cover bg-no-repeat">
+    <div class="antialiased">
+      <!-- background -->
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="container relative grid grid-cols-2 h-screen mx-auto py-5">
+        <div class="border-2 border-green-600 grid grid-cols-1">
+          <h1 class="text-5xl">Hello, I'm Guglielmo.</h1>
+          <h1 class="text-7xl font-extrabold">A Full Stack Developer.</h1>
+          <p class="text-2xl font-light">Hooked on technology since I was three, I couldn't resist tinkering with PCs.
+            <br>I had many
+            roles, but my heart always belonged to tech. That's why I made the switch to coding, turning my passion into a
+            career. <br>Now I create innovative websites and software solutions for you.
+          </p>
+          <div>
+            <div class="text-lg font-light">you can find me on:</div>
+            <div></div>
+          </div>
         </div>
-      </div>
-      <div class="border-2 border-blue-600">
-        projects
-      </div>
+        <div class="border-2 border-blue-600">
+          <h1 class="text-6xl font-extrabold">Projects</h1>
 
+        </div>
+
+      </div>
     </div>
   </div>
 </template>
