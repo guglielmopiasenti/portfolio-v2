@@ -13,11 +13,11 @@ const mobileMenuOpen = ref(false)
 </script>
 
 <template>
-  <header class="bg-black sticky top-0 z-50 glass-navbar backdrop-blur-sm bg-opacity-60">
+  <header class="bg-black sticky top-0 z-50 glass-navbar backdrop-blur-sm bg-opacity-60 antialiased">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
-          <!-- <img class="h-12 w-auto rounded-full" src="public/img/ai_murazzi.png" alt="" /> -->
+          <h1 class="font-extrabold text-2xl">Guglielmo P.</h1>
         </a>
       </div>
       <div class="flex lg:hidden">
@@ -27,7 +27,7 @@ const mobileMenuOpen = ref(false)
           <Bars3Icon class="h-6 w-6" aria-hidden="true" />
         </button>
       </div>
-      <PopoverGroup class="hidden lg:flex lg:gap-x-12">
+      <PopoverGroup class="hidden lg:flex lg:gap-x-12 font-bold text-lg">
 
         <!-- routes -->
         <NuxtLink to="/">Home</NuxtLink>
