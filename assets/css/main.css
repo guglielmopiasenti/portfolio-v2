@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'SK-Modernist';
+  src: url('/fonts/Modernist/Regular/sk-modernist-regular-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/Modernist/Regular/sk-modernist-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/Modernist/Regular/sk-modernist-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/Modernist/Regular/sk-modernist-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/Modernist/Regular/sk-modernist-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/Modernist/Regular/sk-modernist-regular-webfont.svg#SK-Modernist') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SK-Modernist';
+  src: url('/fonts/Modernist/Bold/sk-modernist-bold-webfont.eot');
+  src: url('/fonts/Modernist/Bold/sk-modernist-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Modernist/Bold/sk-modernist-bold-webfont.woff2') format('woff2'),
+       url('/fonts/Modernist/Bold/sk-modernist-bold-webfont.woff') format('woff'),
+       url('/fonts/Modernist/Bold/sk-modernist-bold-webfont.ttf') format('truetype'),
+       url('/fonts/Modernist/Bold/sk-modernist-bold-webfont.svg#SK-Modernist') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SK-Modernist';
+  src: url('/fonts/Modernist/Light/sk-modernist-light-webfont.eot');
+  src: url('/fonts/Modernist/Light/sk-modernist-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Modernist/Light/sk-modernist-light-webfont.woff2') format('woff2'),
+       url('/fonts/Modernist/Light/sk-modernist-light-webfont.woff') format('woff'),
+       url('/fonts/Modernist/Light/sk-modernist-light-webfont.ttf') format('truetype'),
+       url('/fonts/Modernist/Light/sk-modernist-light-webfont.svg#SK-Modernist') format('svg');
+  font-weight: 300; /* Light */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SK-Modernist Mono';
+  src: url('/fonts/Modernist/Mono/sk-modernist-mono-webfont.eot');
+  src: url('/fonts/Modernist/Mono/sk-modernist-mono-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Modernist/Mono/sk-modernist-mono-webfont.woff2') format('woff2'),
+       url('/fonts/Modernist/Mono/sk-modernist-mono-webfont.woff') format('woff'),
+       url('/fonts/Modernist/Mono/sk-modernist-mono-webfont.ttf') format('truetype'),
+       url('/fonts/Modernist/Mono/sk-modernist-mono-webfont.svg#SK-ModernistMono') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*{
+  font-family: 'SK-Modernist';
+}
