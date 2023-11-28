@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     "@nuxtjs/supabase",
     "@vueuse/nuxt",
   ],
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css', '@fortawesome/fontawesome-svg-core/styles.css'],
   supabase: {
     redirect: false,
   },
