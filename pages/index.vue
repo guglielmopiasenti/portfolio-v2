@@ -19,9 +19,19 @@ useHead({
             roles, but my heart always belonged to tech. That's why I made the switch to coding, turning my passion into a
             career. <br>Now I create innovative websites and software solutions for you.
           </p>
-          <div>
+          <div class="flex flex-col gap-5">
             <div class="text-lg font-light">you can find me on:</div>
-            <div></div>
+            <div class="flex gap-7">
+              <NuxtLink to="https://github.com/guglielmopiasenti">
+                <font-awesome-icon :icon="['fab', 'github' ]" size="2xl"></font-awesome-icon>
+              </NuxtLink>
+              <NuxtLink to="https://www.linkedin.com/in/guglielmo-piasenti-749122186/">
+                <font-awesome-icon :icon="['fab', 'linkedin' ]" size="2xl"></font-awesome-icon>
+              </NuxtLink>
+              <NuxtLink to="https://www.instagram.com/guglielmo_piasenti/">
+                <font-awesome-icon :icon="['fab', 'instagram' ]" size="2xl"></font-awesome-icon>
+              </NuxtLink>
+            </div>
           </div>
         </div>
         <div class="border-2 border-blue-600">
