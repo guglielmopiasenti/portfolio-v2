@@ -10,10 +10,11 @@ import {
   XMarkIcon,
 } from '@heroicons/vue/24/outline'
 const mobileMenuOpen = ref(false)
+
 </script>
 
 <template>
-  <header class="bg-black sticky top-0 z-50 glass-navbar backdrop-blur-sm bg-opacity-60 antialiased">
+  <header class="bg-black absolute top-0 left-0 right-0 z-50 glass-navbar backdrop-blur bg-opacity-30 antialiased">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
