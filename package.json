@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/image": "latest",
     "@nuxtjs/supabase": "^1.1.4",
     "@nuxtjs/tailwindcss": "latest",
     "@vueuse/nuxt": "latest",
@@ -25,6 +26,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/vue-fontawesome": "latest-3",
     "@headlessui/vue": "^1.7.16",
-    "@heroicons/vue": "^2.0.18"
+    "@heroicons/vue": "^2.0.18",
+    "sharp": "^0.33.0"
   }
 }
