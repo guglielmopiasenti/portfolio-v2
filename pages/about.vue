@@ -7,7 +7,7 @@
       <!-- Overlay -->
       <div class="absolute inset-0 bg-black bg-opacity-50"></div>
       <div
-        class="container relative grid grid-cols-2 h-screen mx-auto pt-40 pb-8"
+        class="container relative grid grid-cols-2 mx-auto pt-40 "
       >
         <div class="grid grid-cols-1">
           <h1 class="text-7xl font-extrabold">About Me.</h1>
@@ -23,7 +23,7 @@
         </div>
         <!-- Displaying projects -->
         <div class="flex flex-col text-end">
-          <NuxtImg width="2581" height="2579" src="/me-no-background.png" />
+          <img width="2581" height="2579" src="/me-no-background.png"  class="justify-self-end"/>
         </div>
       </div>
     </div>
