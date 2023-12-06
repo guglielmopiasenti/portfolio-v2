@@ -8,11 +8,12 @@ useHead({
   title: "Home",
 });
 
-// Fetching projects
+// setting supabase
 const supabaseUrl = 'https://sbktanpofjpexaclmbbm.supabase.co'
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNia3RhbnBvZmpwZXhhY2xtYmJtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDA1MDA5MzAsImV4cCI6MjAxNjA3NjkzMH0.iQeW6Fqe3uTq0DDuD9wIxJH7KwykguS6xyx5lDuHNws"
 const supabase = createClient(supabaseUrl, supabaseKey)
 
+// Fetching projects
 const projectList = ref([])
 
 onMounted(async () => {
@@ -67,7 +68,7 @@ onMounted(async () => {
         <div class="flex flex-col text-end">
           <h1 class="text-6xl font-extrabold pb-24">Projects</h1>
           <div v-for="project in projectList" :key="project.id">
-            <h2>{{ project.title }}</h2>
+            <NuxtLink :to="{name: 'projects-id', params: { id: project.id}}"> <h1>{{ project.title }}</h1></NuxtLink>
           </div>
         </div>
       </div>
