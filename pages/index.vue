@@ -1,35 +1,11 @@
 <script setup>
+import useProjects from "@/composables/useSupabase";
 
-// Imports
-import { ref, onMounted } from 'vue'
-import { createClient } from '@supabase/supabase-js'
+const { projectList } = useSupabase();
 
 useHead({
   title: "Home",
 });
-
-// setting supabase
-const supabaseUrl = 'https://sbktanpofjpexaclmbbm.supabase.co'
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNia3RhbnBvZmpwZXhhY2xtYmJtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDA1MDA5MzAsImV4cCI6MjAxNjA3NjkzMH0.iQeW6Fqe3uTq0DDuD9wIxJH7KwykguS6xyx5lDuHNws"
-const supabase = createClient(supabaseUrl, supabaseKey)
-
-// Fetching projects
-const projectList = ref([])
-
-onMounted(async () => {
-  const { data: projects, error } = await supabase
-    .from('projects')
-    .select('*')
-
-  if (error) {
-    console.error(error)
-  } else {
-    projectList.value = projects;
-    console.log(projectList.value)
-
-  }
-})
-
 </script>
 
 <template>
@@ -38,7 +14,9 @@ onMounted(async () => {
     <div class="antialiased">
       <!-- Overlay -->
       <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div class="container relative grid grid-cols-2 h-screen mx-auto pt-40 pb-8">
+      <div
+        class="container relative grid grid-cols-2 h-screen mx-auto pt-40 pb-8"
+      >
         <div class="grid grid-cols-1">
           <h1 class="text-5xl">Hello, I'm Guglielmo.</h1>
           <h1 class="text-7xl font-extrabold">A Full Stack Developer.</h1>
@@ -53,13 +31,24 @@ onMounted(async () => {
             <div class="text-lg font-light">you can find me on:</div>
             <div class="flex gap-7">
               <NuxtLink to="https://github.com/guglielmopiasenti">
-                <font-awesome-icon :icon="['fab', 'github']" size="2xl"></font-awesome-icon>
+                <font-awesome-icon
+                  :icon="['fab', 'github']"
+                  size="2xl"
+                ></font-awesome-icon>
               </NuxtLink>
-              <NuxtLink to="https://www.linkedin.com/in/guglielmo-piasenti-749122186/">
-                <font-awesome-icon :icon="['fab', 'linkedin']" size="2xl"></font-awesome-icon>
+              <NuxtLink
+                to="https://www.linkedin.com/in/guglielmo-piasenti-749122186/"
+              >
+                <font-awesome-icon
+                  :icon="['fab', 'linkedin']"
+                  size="2xl"
+                ></font-awesome-icon>
               </NuxtLink>
               <NuxtLink to="https://www.instagram.com/guglielmo_piasenti/">
-                <font-awesome-icon :icon="['fab', 'instagram']" size="2xl"></font-awesome-icon>
+                <font-awesome-icon
+                  :icon="['fab', 'instagram']"
+                  size="2xl"
+                ></font-awesome-icon>
               </NuxtLink>
             </div>
           </div>
@@ -68,7 +57,9 @@ onMounted(async () => {
         <div class="flex flex-col text-end">
           <h1 class="text-6xl font-extrabold pb-24">Projects</h1>
           <div v-for="project in projectList" :key="project.id">
-            <NuxtLink :to="{name: 'projects-id', params: { id: project.id}}"> <h1>{{ project.title }}</h1></NuxtLink>
+            <NuxtLink :to="{ name: 'projects-id', params: { id: project.id } }">
+              <h1>{{ project.title }}</h1></NuxtLink
+            >
           </div>
         </div>
       </div>
