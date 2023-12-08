@@ -1,5 +1,5 @@
 <script setup>
-import useProjects from "@/composables/useSupabase";
+import useSupabase from "@/composables/useSupabase";
 
 const { projectList } = useSupabase();
 
