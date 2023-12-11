@@ -1,15 +1,31 @@
 <script setup>
+import { ref, onMounted } from "vue";
 import useSupabase from "@/composables/useSupabase";
+import { useRoute } from "vue-router";
 
-const { projectList } = useSupabase();
+const { fetchProjectById } = useSupabase();
+const route = useRoute();
+const project = ref(null);
+
+onMounted(async () => {
+  const projectId = route.params.id;
+  try {
+    const fetchedProject = await fetchProjectById(projectId);
+    if (fetchedProject) {
+      project.value = fetchedProject;
+    } else {
+      console.error("Project not found");
+      // Handle the case where the project is not found, e.g., redirect to a 'not found' page or display a message
+    }
+  } catch (error) {
+    console.error("Error fetching project:", error);
+    // Handle any errors that occur during fetching
+  }
+});
 </script>
 
 <template>
-  <div
-    class="antialiased mx-auto"
-    v-for="project in projectList"
-    :key="project.id"
-  >
+  <div class="antialiased mx-auto" v-if="project" :key="project.id">
     <section class="hero pt-32 pb-20 mx-auto border-red-500 border-2">
       <div class="container mx-auto">
         <h1>{{ project.title }}</h1>
