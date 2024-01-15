@@ -58,7 +58,7 @@ useHead({
           <h1 class="text-6xl font-extrabold pb-24">Projects</h1>
           <div v-for="project in projectList" :key="project.id">
             <NuxtLink :to="{ name: 'projects-id', params: { id: project.id } }">
-              <h1>{{ project.title }}</h1></NuxtLink
+              <h1 class="text-5xl pb-12">{{ project.title }}</h1></NuxtLink
             >
           </div>
         </div>
