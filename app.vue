@@ -9,7 +9,7 @@ useHead({
 </script>
 
 <template>
-  <div class="bg-black text-white">
+  <div class="bg-[#050505] text-white">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
