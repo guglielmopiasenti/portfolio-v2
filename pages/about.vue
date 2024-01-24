@@ -32,7 +32,7 @@
     <div class="container py-20 mx-auto flex flex-col items-center">
       <h1 class="text-7xl font-semibold">Technologies I use</h1>
       <div class="py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
           <div
             class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
           >
@@ -87,7 +87,7 @@
             />
             <img
               class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-              src="/logos/MySQL_1.svg"
+              src="/logos/mysql-official.svg"
               alt="Statamic"
               width="158"
               height="48"
@@ -118,7 +118,7 @@
               src="/logos/PHP.svg"
               alt="Statamic"
               width="158"
-              height="48"
+              height="88"
             />
             <img
               class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
