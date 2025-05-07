@@ -1,7 +1,7 @@
 <script setup>
-import useSupabase from "@/composables/useSupabase";
+// import useSupabase from "@/composables/useSupabase";
 
-const { projectList } = useSupabase();
+// const { projectList } = useSupabase();
 
 useHead({
   title: "Home",
@@ -56,11 +56,11 @@ useHead({
         <!-- Displaying projects -->
         <div class="flex flex-col text-end">
           <h1 class="text-6xl font-extrabold pb-24">Projects</h1>
-          <div v-for="project in projectList" :key="project.id">
+          <!-- <div v-for="project in projectList" :key="project.id">
             <NuxtLink :to="{ name: 'projects-id', params: { id: project.id } }">
               <h1 class="text-5xl pb-12">{{ project.title }}</h1></NuxtLink
             >
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
